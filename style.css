@@ -1,0 +1,401 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #22242A;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  
+  header .logo img {
+    width: 116px;
+    height: 26px;
+
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin: 0 1rem;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  body.active {
+    background-image: url('https://scontent.fkhi17-2.fna.fbcdn.net/v/t39.30808-6/465465333_1267209394276018_748927878396489759_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF5Owois1DOIFOUZTWDI71NpgBeyr6yQmCmAF7KvrJCYE0MnGlAnPdWmmlGltnoGiZ-e6ebO0egpXF92ytzVqjd&_nc_ohc=lJF9fsuonb4Q7kNvgE4OT_2&_nc_zt=23&_nc_ht=scontent.fkhi17-2.fna&_nc_gid=A3l1x2gmSCBMo-N-lrYE9C_&oh=00_AYBXnkz8QyZmdLGjn2ZIutzdQrEigX5dXnxAUF3h1MfuPg&oe=674BC38A'); /* Replace with your image URL */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .toggle-container {
+    text-align: center;
+    display: none;
+  }
+  
+  .toggle {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle:before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle.active {
+    background-color: #4caf50;
+  }
+  
+  .toggle.active:before {
+    transform: translateX(30px);
+  }
+  
+  #status {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .hero .content h1 {
+    font-size: 52px;
+    line-height: 60.94px;
+  }
+  
+  .hero .btn-more {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    background: linear-gradient(to right, #CC2B5E ,#753A88 );
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .hero .btn-more:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+  }
+  
+  .car-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .car-details .engine,
+  .car-details .speed {
+    text-align: center;
+  }
+  
+
+  .car-details .car-image img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: left;
+    padding: 1rem 0;
+  }
+
+  footer .social-icons a {
+    margin: 0 1rem;
+  }
+  
+
+  footer .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .car-details {
+      flex-direction: column;
+    }
+  
+    .hero .content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero .btn-more {
+      font-size: 0.9rem;
+    }
+  }
+   /* Responsive Styles */
+   @media (max-width: 598px) {
+
+    header .logo img {
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 105px;
+      height: 26px;
+     
+  
+    }
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  header nav ul li {
+    margin: 0 1rem;
+  }
+    .car-details {
+      flex-direction: column;
+    }
+  
+    .hero .content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero .btn-more {
+      font-size: 0.9rem;
+    }
+  }
+  /* Responsive Styles */
+  @media (max-width: 560px) {
+
+    header .logo img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90px;
+      height: 20px;
+    }
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+      
+  header nav ul li {
+    margin: 0 .70rem;
+  }
+
+    .car-details {
+      flex-direction: column;
+    }
+  
+    .hero .content h1 {
+      font-size: 1.1rem;
+    }
+  
+    .hero .btn-more {
+      font-size: 0.4rem;
+    }
+  }
+    /* Responsive Styles */
+    @media (max-width: 539px) {
+
+      header .logo img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 30px;
+      }
+      header nav ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+      }
+
+    header nav ul li {
+      margin: 0 .70rem;
+    }
+
+    body.active {
+      background-image: url('https://scontent.fkhi17-2.fna.fbcdn.net/v/t39.30808-6/465465333_1267209394276018_748927878396489759_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF5Owois1DOIFOUZTWDI71NpgBeyr6yQmCmAF7KvrJCYE0MnGlAnPdWmmlGltnoGiZ-e6ebO0egpXF92ytzVqjd&_nc_ohc=lJF9fsuonb4Q7kNvgE4OT_2&_nc_zt=23&_nc_ht=scontent.fkhi17-2.fna&_nc_gid=A3l1x2gmSCBMo-N-lrYE9C_&oh=00_AYBXnkz8QyZmdLGjn2ZIutzdQrEigX5dXnxAUF3h1MfuPg&oe=674BC38A'); /* Replace with your image URL */
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+    }
+    
+    .toggle-container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+     
+    }
+    
+    .toggle {
+      width: 47px;
+      height: 19px;
+      background-color: #ccc;
+      border-radius: 15px;
+      position: relative;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .main-toggle{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-top: 20px;
+    }
+    
+    .toggle:before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      background-color: #ca3535;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: transform 0.3s ease;
+    }
+    
+    .toggle.active {
+      background-color: #4caf50;
+    }
+    
+    .toggle.active:before {
+      transform: translateX(30px);
+    }
+    
+    #status {
+      margin-top: 8px;
+      font-size: 8px;
+
+    }
+
+ /* Responsive Styles */
+ @media (max-width:300px) {
+
+  header .logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+header nav ul li {
+  margin: 0 .70rem;
+}
+
+body.active {
+  background-image: url('https://scontent.fkhi17-2.fna.fbcdn.net/v/t39.30808-6/465465333_1267209394276018_748927878396489759_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF5Owois1DOIFOUZTWDI71NpgBeyr6yQmCmAF7KvrJCYE0MnGlAnPdWmmlGltnoGiZ-e6ebO0egpXF92ytzVqjd&_nc_ohc=lJF9fsuonb4Q7kNvgE4OT_2&_nc_zt=23&_nc_ht=scontent.fkhi17-2.fna&_nc_gid=A3l1x2gmSCBMo-N-lrYE9C_&oh=00_AYBXnkz8QyZmdLGjn2ZIutzdQrEigX5dXnxAUF3h1MfuPg&oe=674BC38A'); /* Replace with your image URL */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.toggle-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle {
+  width: 47px;
+  height: 19px;
+  background-color: #ccc;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.main-toggle{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-top: 20px;
+}
+
+.toggle:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #2ec8e4;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+
+.toggle.active {
+  background-color: #4caf50;
+}
+
+.toggle.active:before {
+  transform: translateX(30px);
+}
+
+#status {
+  margin-top: 8px;
+  font-size: 8px;
+
+}
+ }
+      .car-details {
+        flex-direction: column;
+      }
+    
+      .hero .content h1 {
+        font-size: 1.1rem;
+      }
+    
+      .hero .btn-more {
+        font-size: 0.4rem;
+      }
+    }
