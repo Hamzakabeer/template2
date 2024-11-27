@@ -18,13 +18,16 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 2rem 1rem;
   }
   
   header .logo img {
     width: 116px;
     height: 26px;
 
+  }
+  .logo{
+    margin-left: 20px;
   }
   
   header nav ul {
@@ -119,12 +122,15 @@
   
   .car-details {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 3rem;
+    margin-right: 19px;
+    margin-left: 19px;
+    
     flex-wrap: wrap;
   }
-  
+
   .car-details .engine,
   .car-details .speed {
     text-align: center;
@@ -140,7 +146,7 @@
   /* Footer */
   footer {
     text-align: left;
-    padding: 1rem 0;
+    padding: 1rem 13px;
   }
 
   footer .social-icons a {
