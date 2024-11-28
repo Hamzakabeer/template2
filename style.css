@@ -160,6 +160,47 @@
   }
   
   /* Responsive Styles */
+  @media (max-width: 1886px) {
+     
+    header .logo img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 20px;
+    }
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+      
+  header nav ul li {
+    margin: 1rem;
+  }
+
+    .car-details {
+      flex-direction: column;
+    }
+  
+    .hero .content h1 {
+      font-size: 3rem;
+    }
+  
+    .hero .btn-more {
+      font-size: 1.5rem;
+      margin-top: 50px;
+    }
+    .car-details .engine,
+    .car-details .speed {
+      text-align: center;
+      font-size: 1rem;
+    }
+    
+  }
+
+
+  /* Responsive Styles */
   @media (max-width: 768px) {
     .car-details {
       flex-direction: column;
