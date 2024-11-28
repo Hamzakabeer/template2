@@ -198,8 +198,6 @@
     }
     
   }
-
-
   /* Responsive Styles */
   @media (max-width: 768px) {
     .car-details {
@@ -444,5 +442,6 @@ body.active {
     
       .hero .btn-more {
         font-size: 0.4rem;
+        margin-top:-50px;
       }
     }
